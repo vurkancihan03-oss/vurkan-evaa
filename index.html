@@ -276,7 +276,13 @@ footer small {
     </audio>
 </div>
 
-</div>
+<script>
+const music = document.getElementById("music");
+
+music.addEventListener("error", function () {
+    console.log("Müzik yüklenemedi:", music.error);
+});
+</script>
 </div>
 
 
