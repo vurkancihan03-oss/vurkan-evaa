@@ -1,0 +1,971 @@
+```html
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Vurkan ❤️ Eva</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #0d090b;
+    color: #f8eef1;
+    font-family: Georgia, serif;
+    line-height: 1.7;
+}
+
+/* MÜZİK */
+
+.top-music {
+    width: 100%;
+    padding: 15px;
+    background: #130c0f;
+    border-bottom: 1px solid #44232d;
+    text-align: center;
+}
+
+.top-music p {
+    margin: 0 0 8px;
+    color: #d98a9b;
+}
+
+.top-music audio {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* ANA SAYFA */
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+
+    background:
+    radial-gradient(
+        circle at center,
+        #35151f 0,
+        #0d090b 60%
+    );
+}
+
+.heart {
+    font-size: 55px;
+    color: #d96b82;
+    animation: pulse 1.8s infinite;
+}
+
+.small {
+    letter-spacing: 4px;
+    font-size: 12px;
+    color: #c993a0;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 10vw, 90px);
+    font-weight: 400;
+    margin: 5px 0 15px;
+}
+
+.hero h1 span {
+    color: #c85d75;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #d7c3c8;
+}
+
+/* BÖLÜMLER */
+
+.section {
+    max-width: 900px;
+    margin: auto;
+    padding: 90px 25px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: clamp(30px, 6vw, 52px);
+    font-weight: 400;
+    margin: 8px 0 35px;
+}
+
+/* SAYAÇ */
+
+.counter {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.counter div {
+    min-width: 90px;
+    padding: 18px 10px;
+    border: 1px solid #44232d;
+    background: #160e11;
+    border-radius: 12px;
+}
+
+.counter b {
+    display: block;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.counter span {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #a98690;
+}
+
+/* ZAMAN ÇİZELGESİ */
+
+.timeline {
+    border-top: 1px solid #29171c;
+}
+
+.event {
+    max-width: 600px;
+    margin: 14px auto;
+    padding: 20px;
+    text-align: left;
+    border-left: 2px solid #a9556c;
+    background: #130c0f;
+}
+
+.event b {
+    display: block;
+    color: #d98a9b;
+}
+
+.event span {
+    color: #d7c3c8;
+}
+
+/* FOTOĞRAFLAR */
+
+.memory {
+    max-width: 700px;
+    margin: 80px auto;
+    padding: 20px;
+
+    background: #130c0f;
+
+    border: 1px solid #44232d;
+    border-radius: 16px;
+
+    box-shadow: 0 10px 30px #0008;
+}
+
+.memory img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    border-radius: 10px;
+}
+
+.memory-text {
+    padding: 20px 10px 5px;
+}
+
+.memory-text h3 {
+    color: #d98a9b;
+
+    font-size: 26px;
+    font-weight: 400;
+
+    margin: 5px 0 12px;
+}
+
+.memory-text p {
+    color: #d7c3c8;
+
+    font-size: 17px;
+
+    margin: 0;
+}
+
+/* MEKTUP */
+
+.letter {
+    background: #120b0e;
+
+    border-top: 1px solid #29171c;
+    border-bottom: 1px solid #29171c;
+}
+
+.letter p {
+    max-width: 650px;
+
+    margin: 20px auto;
+
+    font-size: 18px;
+
+    color: #dfcdd1;
+}
+
+.signature {
+    color: #d98a9b !important;
+    font-style: italic;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+
+    padding: 50px 20px;
+
+    color: #d98a9b;
+
+    font-size: 22px;
+}
+
+footer small {
+    font-size: 12px;
+    color: #806b72;
+}
+
+/* ANİMASYON */
+
+@keyframes pulse {
+
+    50% {
+        transform: scale(1.12);
+        opacity: .75;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ========================= -->
+<!-- MÜZİK -->
+<!-- ========================= -->
+
+<div class="top-music">
+
+    <p>🎵 Bizim Şarkımız — Love Song</p>
+
+    <audio controls loop>
+
+        <source src="Love Song.mp3" type="audio/mpeg">
+
+        Tarayıcın ses dosyasını desteklemiyor.
+
+    </audio>
+
+</div>
+
+
+<!-- ========================= -->
+<!-- ANA SAYFA -->
+<!-- ========================= -->
+
+<section class="hero">
+
+    <div class="heart">
+        ❤️
+    </div>
+
+    <div class="small">
+        27 ARALIK 2024 • 18:30
+    </div>
+
+    <h1>
+        Vurkan <span>❤️</span> Eva
+    </h1>
+
+    <p>
+
+        Bir tesadüf gibi başlayan hikâyemiz...
+
+        <br>
+
+        sonsuza kadar sürecek bir anıya dönüştü.
+
+    </p>
+
+</section>
+
+
+<!-- ========================= -->
+<!-- SAYAÇ -->
+<!-- ========================= -->
+
+<section class="section">
+
+    <h2>
+        Ne Kadar Oldu? ❤️
+    </h2>
+
+    <div id="counter" class="counter"></div>
+
+</section>
+
+
+<!-- ========================= -->
+<!-- HİKAYEMİZ -->
+<!-- ========================= -->
+
+<section class="section">
+
+    <h2>
+        Hikâyemiz
+    </h2>
+
+    <div class="timeline">
+
+        <div class="event">
+
+            <b>
+                26 Kasım 2024
+            </b>
+
+            <span>
+                İlk tanıştığımız gün.
+            </span>
+
+        </div>
+
+
+        <div class="event">
+
+            <b>
+                15 Aralık 2024
+            </b>
+
+            <span>
+                İlk buluşmamız.
+            </span>
+
+        </div>
+
+
+        <div class="event">
+
+            <b>
+                27 Aralık 2024 — 18:30
+            </b>
+
+            <span>
+                Bizim hikâyemizin başladığı an.
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================= -->
+<!-- ANILAR -->
+<!-- ========================= -->
+
+<section class="section">
+
+    <h2>
+        Anılarımız 📸
+    </h2>
+
+
+    <!-- FOTOĞRAF 1 -->
+
+    <div class="memory">
+
+        <img src="1.jpg">
+
+        <div class="memory-text">
+
+            <h3>
+                İlk anımız ❤️
+            </h3>
+
+            <p>
+                Bazı insanlar hayatına girer ve her şeyi değiştirir. Seni ilk gördüğüm o gün, belki de bunun sadece başlangıcı olduğunu bilmiyordum. Ama kalbim seni ilk görüşte sevmişti bile. ❤️
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOTOĞRAF 2 -->
+
+    <div class="memory">
+
+        <img src="2.jpg">
+
+        <div class="memory-text">
+
+            <h3>
+                Güzel bir anımız ❤️
+            </h3>
+
+            <p>
+                İlk kez aynı masada oturduğumuz, birlikte ilk yemeğimizi yediğimiz o gün… Belki sıradan bir yemekti ama benim için seninle paylaştığım ilk güzel anlardan biriydi. ❤️
+.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOTOĞRAF 3 -->
+
+    <div class="memory">
+
+        <img src="3.jpg">
+
+        <div class="memory-text">
+
+            <h3>
+                Unutamadığımız bir gün ❤️
+            </h3>
+
+            <p>
+                İlk kez birlikte kahvaltı hazırladığımız o sabah… Belki küçücük bir andı ama seninle yaptığımız her şey gibi benim için çok özeldi. Birlikte hazırladığımız ilk kahvaltının tadı hâlâ aklımda. ❤️
+.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOTOĞRAF 4 -->
+
+    <div class="memory">
+
+        <img src="4.jpg">
+
+        <div class="memory-text">
+
+            <h3>
+                Birlikte ❤️
+            </h3>
+
+            <p>
+                Sana aldığım ilk çiçek… O an sana sadece bir çiçek vermek istemiştim, ama aslında sana olan hislerimin küçük bir parçasını da vermişim. 🌹❤️
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOTOĞRAF 5 -->
+
+    <div class="memory">
+
+        <img src="5.jpg">
+
+        <div class="memory-text">
+
+            <h3>
+                Güzel günlerden biri ❤️
+            </h3>
+
+            <p>
+                İlk kez birlikte sahile geldiğimiz gün… Denize ilk kez birlikte girdik, bisiklet sürdük, bol bol güldük. O gün yaptığımız her şey ayrı bir anıydı ama hepsinin en güzel tarafı, hepsini seninle yaşamaktı. 🌊🚲❤️
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOTOĞRAF 6 -->
+
+    <div class="memory">
+
+        <img src="6.jpg">
+
+        <div class="memory-text">
+
+            <h3>
+                Bir başka güzel an ❤️
+            </h3>
+
+            <p>
+                Gözlerine her baktığımda, neden sana bu kadar aşık olduğumu yeniden hatırlıyorum. İçinde kaybolabileceğim bir dünya var sanki… Ve ben o dünyadan hiç çıkmak istemiyorum. ❤️
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOTOĞRAF 7 -->
+
+    <div class="memory">
+
+        <img src="7.jpg">
+
+        <div class="memory-text">
+
+            <h3>
+                O güzel gün ❤️
+            </h3>
+
+            <p>
+                Herkesin bir manzarası vardır, benim manzaram sensin. ❤️
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOTOĞRAF 8 -->
+
+    <div class="memory">
+
+        <img src="8.jpg">
+
+        <div class="memory-text">
+
+            <h3>
+                Hatıralar ❤️
+            </h3>
+
+            <p>
+                İlk motor sürüşümüz… Seninle paylaştığım küçücük bir an bile benim için çok özel. 🏍️❤️
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOTOĞRAF 9 -->
+
+    <div class="memory">
+
+        <img src="9.jpg">
+
+        <div class="memory-text">
+
+            <h3>
+                Hatırladıkça gülümsediğimiz an ❤️
+            </h3>
+
+            <p>
+                Seni çalışırken izlemek bile bana ayrı bir huzur veriyor. Bazen hiçbir şey yapmadan, sadece seni izlemek yetiyor. ❤️
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOTOĞRAF 10 -->
+
+    <div class="memory">
+
+        <img src="10.jpg">
+
+        <div class="memory-text">
+
+            <h3>
+                Biz ❤️
+            </h3>
+
+            <p>
+                kışın ortasında beni ısıtan giydiklerim değil senin güzel gülümsemen            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOTOĞRAF 11 -->
+
+    <div class="memory">
+
+        <img src="11.jpg">
+
+        <div class="memory-text">
+
+            <h3>
+                Güzel bir hatıra ❤️
+            </h3>
+
+            <p>
+                Birlikte çektiğimiz en saçma, en komik fotoğraflar… Belki normal değiliz ama birbirimizle çok mutluyuz. 😂❤️
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOTOĞRAF 12 -->
+
+    <div class="memory">
+
+        <img src="12.jpg">
+
+        <div class="memory-text">
+
+            <h3>
+                O an ❤️
+            </h3>
+
+            <p>
+             Seni öpmek, sanki dünyadaki bütün sorunları bir anlığına unutturuyor. O an sadece sen varsın, ben varım ve keşke zaman hiç ilerlemese dediğim o küçücük an var. ❤️
+   
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOTOĞRAF 13 -->
+
+    <div class="memory">
+
+        <img src="13.jpg">
+
+        <div class="memory-text">
+
+            <h3>
+                Birlikte ❤️
+            </h3>
+
+            <p>
+               gizli gizli buluşmalarımzı çok özledim
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOTOĞRAF 14 -->
+
+    <div class="memory">
+
+        <img src="14.jpg">
+
+        <div class="memory-text">
+
+            <h3>
+                Güzel günlerden biri ❤️
+            </h3>
+
+            <p>
+              Elinde çiçek, yüzünde o güzel gülüş… İkisi de birbirinden güzel ama benim en sevdiğim yine onun gülüşü. 🌸❤️.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOTOĞRAF 15 -->
+
+    <div class="memory">
+
+        <img src="15.jpg">
+
+        <div class="memory-text">
+
+            <h3>
+                Unutulmaz ❤️
+            </h3>
+
+            <p>
+               Aynada yine ikimiz… Seninle yan yana olduğum her anı, her fotoğrafı ayrı seviyorum. Çünkü ne kadar sıradan görünse de, sen yanımdayken benim için her şey daha güzel. ❤️
+ .
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOTOĞRAF 16 -->
+
+    <div class="memory">
+
+        <img src="16.jpg">
+
+        <div class="memory-text">
+
+            <h3>
+                Sen ve ben ❤️
+            </h3>
+
+            <p>
+              Hep gittiğimiz o kafede, yine seninle bir selfie… O kafenin bende güzel bir yeri varsa, sebebi hep sen oldun. ❤️
+  .
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOTOĞRAF 17 -->
+
+    <div class="memory">
+
+        <img src="17.jpg">
+
+        <div class="memory-text">
+
+            <h3>
+                Güzel bir anı ❤️
+            </h3>
+
+            <p>
+              Güneşli bir kış gününde, montlarımızı giyip Bağcılar Meydanı’nda yine birlikte bir selfie… O günün güzelliği biraz da seninle olmaktan geliyordu. ☀️❤️
+  .
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOTOĞRAF 18 -->
+
+    <div class="memory">
+
+        <img src="18.jpg">
+
+        <div class="memory-text">
+
+            <h3>
+                Birlikte ❤️
+            </h3>
+
+            <p>
+               Yanımdaki güzel çiçeğim… Elimdeki çiçek ne kadar güzel olsa da, yanımdaki senin yanında hiçbir şey değil. 🌸❤️
+ .
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOTOĞRAF 19 -->
+
+    <div class="memory">
+
+        <img src="19.jpg">
+
+        <div class="memory-text">
+
+            <h3>
+                Bizim hikâyemiz ❤️
+            </h3>
+
+            <p>
+               Kafede, herkesten gizli çektiğimiz o fotoğraf… Sadece ikimizin bildiği küçük bir an gibi. Kalabalığın içinde bile kendi dünyamızdaymışız gibi, yan yana olduğumuz her anı böyle saklamayı seviyorum. ❤️
+ .
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOTOĞRAF 20 -->
+
+    <div class="memory">
+
+        <img src="20.jpg">
+
+        <div class="memory-text">
+
+            <h3>
+                Ve daha nice anılar... ❤️
+            </h3>
+
+            <p>
+              İki çift göz, iki farklı renk ama aynı hikâye… Belki bu fotoğraf sadece bir çizim, ama benim için birbirimize baktığımızda gördüğümüz o güzel şeylerin küçük bir yansıması. 💙🩷❤️
+  .
+            </p>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+<!-- ========================= -->
+<!-- MEKTUP -->
+<!-- ========================= -->
+
+<section class="section letter">
+
+    <h2>
+        Sana ❤️
+    </h2>
+
+    <p>
+        Seninle geçirdiğim her an benim için çok değerli.
+        Birlikte yaşadığımız güzel günler, güldüğümüz anlar
+        ve birbirimize bıraktığımız küçük hatıralar...
+    </p>
+
+    <p>
+        Bu site bizim hikâyemizin küçük bir parçası.
+    </p>
+
+    <p class="signature">
+
+        Seni seviyorum Eva. ❤️
+
+        <br>
+
+        — Vurkan
+
+    </p>
+
+</section>
+
+
+<footer>
+
+    Vurkan ❤️ Eva
+
+    <br>
+
+    <small>
+        Hikâyemizin daha çok güzel anısı var.
+    </small>
+
+</footer>
+
+
+<!-- ========================= -->
+<!-- SAYAÇ KODU -->
+<!-- ========================= -->
+
+<script>
+
+const start = new Date("2024-12-27T18:30:00");
+
+function update() {
+
+    const now = new Date();
+
+    let ms = now - start;
+
+    let seconds = Math.floor(ms / 1000);
+
+    const s = seconds % 60;
+
+    seconds = Math.floor(seconds / 60);
+
+    const m = seconds % 60;
+
+    seconds = Math.floor(seconds / 60);
+
+    const h = seconds % 24;
+
+    const days = Math.floor(seconds / 24);
+
+    const years = Math.floor(days / 365.2425);
+
+    const remainingDays = Math.floor(
+
+        (
+            now -
+
+            new Date(
+
+                start.getTime() +
+
+                years * 365.2425 * 86400000
+
+            )
+
+        ) / 86400000
+
+    );
+
+
+    document.getElementById("counter").innerHTML = `
+
+        <div>
+            <b>${years}</b>
+            <span>YIL</span>
+        </div>
+
+        <div>
+            <b>${remainingDays}</b>
+            <span>GÜN</span>
+        </div>
+
+        <div>
+            <b>${String(h).padStart(2,"0")}</b>
+            <span>SAAT</span>
+        </div>
+
+        <div>
+            <b>${String(m).padStart(2,"0")}</b>
+            <span>DAKİKA</span>
+        </div>
+
+        <div>
+            <b>${String(s).padStart(2,"0")}</b>
+            <span>SANİYE</span>
+        </div>
+
+    `;
+
+}
+
+update();
+
+setInterval(update, 1000);
+
+</script>
+
+
+</body>
+</html>
+```
