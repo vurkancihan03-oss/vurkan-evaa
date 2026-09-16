@@ -257,14 +257,74 @@ footer small {
     }
 
 }
+/* ŞİFRE EKRANI */
 
+#password-screen {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: #0d090b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.password-box {
+    width: 90%;
+    max-width: 400px;
+    padding: 35px;
+}
+
+.password-box h2 {
+    color: #d96b82;
+    font-weight: 400;
+}
+
+.password-box p {
+    color: #c993a0;
+}
+
+.password-box input {
+    width: 100%;
+    padding: 14px;
+    margin: 15px 0 10px;
+    background: #1a1014;
+    border: 1px solid #44232d;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.password-box button {
+    padding: 12px 30px;
+    background: #c85d75;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#wrong-password {
+    color: #d96b82;
+}
 </style>
 
 </head>
 
 
 <body>
+<div id="password-screen">
+    <div class="password-box">
+        <h2>❤️ Bizim Hikâyemiz</h2>
+        <p>Bu site sadece ikimize ait.</p>
 
+        <input type="password" id="password" placeholder="Şifre">
+        <button onclick="checkPassword()">Giriş</button>
+
+        <p id="wrong-password"></p>
+    </div>
+</div>
 
 <!-- ========================= -->
 <!-- MÜZİK -->
@@ -957,7 +1017,16 @@ function update() {
 update();
 
 setInterval(update, 1000);
+function checkPassword() {
+    const password = document.getElementById("password").value;
 
+    if (password === "9726") {
+        document.getElementById("password-screen").style.display = "none";
+    } else {
+        document.getElementById("wrong-password").textContent =
+            "Şifre yanlış ❤️";
+    }
+}
 </script>
 
 
